@@ -1,0 +1,15 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+
+{% block title %} Show one Book {% endblock title %}
+
+{% block content %}
+  <a href="{% url 'books.list_books' %}">Go Back</a>
+
+  <h1>Details of Book1</h1>
+  <h2>Web Development with Django</h2>
+  <h2>Author: Ben Shaw, Saurabh Badhwar, Chris Guest, and Bharath Chandra K S.</h2>
+  <p><strong> Web Development with Django, 2/e </strong> provides a clear, simple, engaging and entertaining introduction to web development with Django.</p>
+
+  <img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200" height="200">
+{% endblock content %}
